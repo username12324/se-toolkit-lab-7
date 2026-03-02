@@ -119,6 +119,7 @@ The `Desktop` directory is the folder that corresponds to the desktop on your sc
 `Windows`: `C:/Users/<username>/Desktop/`
 `Linux`: `~/Desktop/` (see [home directory (`~`)](#home-directory-))
 `macOS`: `~/Desktop/`
+`WSL`: `~/Desktop/`
 
 ### `<directory-path>`
 
