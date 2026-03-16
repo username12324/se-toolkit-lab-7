@@ -45,7 +45,7 @@ Complete these steps:
 
 ### Open the `Autochecker` bot
 
-Open: <https://t.me/auchebot>.
+Open in `Telegram`: <https://t.me/auchebot>.
 
 ### Log in to the `Autochecker` bot
 
