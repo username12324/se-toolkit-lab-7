@@ -93,27 +93,40 @@ See:
 
    ```terminal
    {
-      "created": 1773379590,
+      "created": 1773942368,
       "usage": {
-         "completion_tokens": 8,
-         "prompt_tokens": 15,
+         "completion_tokens": 165,
+         "prompt_tokens": 22,
+         "completion_tokens_details": {
+            "text_tokens": 165,
+            "reasoning_tokens": 152
+         },
          "prompt_tokens_details": {
+            "cache_creation": {
+               "ephemeral_5m_input_tokens": 0
+            },
+            "text_tokens": 22,
+            "cache_creation_input_tokens": 0,
+            "cache_type": "ephemeral",
             "cached_tokens": 0
          },
-         "total_tokens": 23
+         "total_tokens": 187
       },
-      "model": "coder-model",
-      "id": "chatcmpl-9c04fd89-7d16-469f-af7b-8e64a9418bb3",
+      "model": "qwen3.5-plus",
+      "id": "chatcmpl-c80dbef9-d5cd-4ee1-8a1e-bc462e19b20e",
       "choices": [
          {
             "finish_reason": "stop",
             "index": 0,
             "message": {
-            "role": "assistant",
-            "content": "2 + 2 = 4."
-            }
+               "role": "assistant",
+               "content": "2 + 2 equals **4**.",
+               "reasoning_content": "... **Final Output:** \"4\" or \"2 + 2 equals 4.\" ..."
+            },
+            "logprobs": null
          }
       ],
+      "system_fingerprint": null,
       "object": "chat.completion"
    }
    ```
