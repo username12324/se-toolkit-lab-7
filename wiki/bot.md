@@ -8,7 +8,8 @@
   - [`<your-bot-username>` placeholder](#your-bot-username-placeholder)
 - [Create a `Telegram` bot](#create-a-telegram-bot)
 - [Deploy the bot on the VM](#deploy-the-bot-on-the-vm)
-  - [Set up the bot environment (REMOTE)](#set-up-the-bot-environment-remote)
+  - [Enter the repository directory (REMOTE)](#enter-the-repository-directory-remote)
+  - [Configure the environment (REMOTE)](#configure-the-environment-remote)
   - [Start the bot (REMOTE)](#start-the-bot-remote)
   - [Check the bot](#check-the-bot)
 
@@ -64,15 +65,24 @@ The [username](#bot-username) of your bot.
 ## Deploy the bot on the VM
 
 1. [Connect to the VM as the user `admin` (LOCAL)](./vm-access.md#connect-to-the-vm-as-the-user-user-local).
-2. [Set up the bot environment (REMOTE)](#set-up-the-bot-environment-remote).
-3. [Start the bot (REMOTE)](#start-the-bot-remote).
-4. [Check the bot](#check-the-bot).
+2. [Enter the repository directory (REMOTE)](#enter-the-repository-directory-remote).
+3. [Configure the environment (REMOTE)](#configure-the-environment-remote).
+4. [Start the bot (REMOTE)](#start-the-bot-remote).
+5. [Check the bot](#check-the-bot).
 
-### Set up the bot environment (REMOTE)
+### Enter the repository directory (REMOTE)
 
-1. [Enter the repository directory](./lms-api-deployment.md#enter-the-repository-directory-remote).
+1. To enter the repository directory,
 
-2. To open [`.env.docker.secret`](./dotenv-bot-secret.md#about-envbotsecret) for editing,
+   [run in the `VS Code Terminal`](./vs-code.md#run-a-command-in-the-vs-code-terminal):
+
+   ```terminal
+   cd ~/se-toolkit-lab-7
+   ```
+
+### Configure the environment (REMOTE)
+
+1. To open [`.env.docker.secret`](./dotenv-bot-secret.md#about-envbotsecret) for editing,
 
    [run in the `VS Code Terminal`](./vs-code.md#run-a-command-in-the-vs-code-terminal):
 
@@ -80,8 +90,7 @@ The [username](#bot-username) of your bot.
    nano .env.bot.secret
    ```
 
-3. Set the values:
-
+2. Set the values:
    - [`BOT_TOKEN`](./dotenv-bot-secret.md#bot_token)
    - [`LMS_API_URL`](./dotenv-bot-secret.md#lms_api_url)
    - [`LMS_API_KEY`](./dotenv-bot-secret.md#lms_api_key)
@@ -89,7 +98,7 @@ The [username](#bot-username) of your bot.
    - [`LLM_API_BASE_URL`](./dotenv-bot-secret.md#llm_api_base_url)
    - [`LLM_API_MODEL`](./dotenv-bot-secret.md#llm_api_model)
 
-4. Save and close the file.
+3. Save and close the file.
 
 ### Start the bot (REMOTE)
 
